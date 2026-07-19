@@ -14,7 +14,7 @@ def test_predict_valid_payload():
 
 def test_predict_valid_error():
     response = client.post("/predict", json={"input": "becas"})
-    assert response.status_code == 202
+    assert response.status_code == 200
     assert "result" in response.json()
 
 def test_predict_valid_horarios():
