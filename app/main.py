@@ -14,7 +14,7 @@ class PredictRequest(BaseModel):
         ...,
         min_length=1,
         description="Texto que se desea consultar",
-        examples=["becas"],
+        examples=["becas", "matricula"],
     )
 
 
